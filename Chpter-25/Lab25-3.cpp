@@ -56,29 +56,29 @@ class DTriangle : public Triangle {
         public: 
         DTriangle(){
                    base = 10; height = 2; depth = 3;
- }
+ 	}
  
          void findArea() {
                  std::cout << "Volume of 3D Triangle is " << (0.5 * base * height * depth) << std::endl;
- }
+ 	}
 };
 class DRectangle : public Rectangle {
         public: 
  	DRectangle(){
   		width = 5; length = 10; depth = 3;
- }
+ 	}
  	void findArea() {
  		 std::cout << "Volume of 3D Rectangle is " << (width * length * depth) << std::endl;
- }
+ 	}
 };
 class DCircle : public Circle {
 	public: 
  	DCircle(double rr, int dd) : Circle(rr){
            	depth = dd;
- }
+ 	}
  	void findArea() {
  		 std::cout << "Volume of 3D Circle is " << (M_PI * radius * radius * depth) << std::endl;
- }
+	}
 };
 int main() {
  Triangle tr;
