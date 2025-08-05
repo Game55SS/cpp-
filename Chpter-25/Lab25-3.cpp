@@ -52,7 +52,6 @@ class Circle : public Base_class {
 		std::cout << "Perimeter of cicle is " << (2.0 * M_PI * radius) << std::endl;
 	}
 };
-
 class DTriangle : public Triangle {
         public: 
         DTriangle(){
@@ -63,7 +62,6 @@ class DTriangle : public Triangle {
                  std::cout << "Volume of 3D Triangle is " << (0.5 * base * height * depth) << std::endl;
  }
 };
-
 class DRectangle : public Rectangle {
         public: 
  	DRectangle(){
@@ -73,7 +71,6 @@ class DRectangle : public Rectangle {
  		 std::cout << "Volume of 3D Rectangle is " << (width * length * depth) << std::endl;
  }
 };
-
 class DCircle : public Circle {
 	public: 
  	DCircle(double rr, int dd) : Circle(rr){
@@ -83,7 +80,6 @@ class DCircle : public Circle {
  		 std::cout << "Volume of 3D Circle is " << (M_PI * radius * radius * depth) << std::endl;
  }
 };
-
 int main() {
  Triangle tr;
  tr.findArea();
