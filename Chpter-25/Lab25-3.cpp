@@ -54,18 +54,18 @@ class Circle : public Base_class {
 };
 
 class DTriangle : public Triangle {
-     public: 
+        public: 
         DTriangle(){
-          base = 10; height = 2; depth = 3;
+                   base = 10; height = 2; depth = 3;
  }
  
-     void findArea() {
-         std::cout << "Volume of 3D Triangle is " << (0.5 * base * height * depth) << std::endl;
+         void findArea() {
+                 std::cout << "Volume of 3D Triangle is " << (0.5 * base * height * depth) << std::endl;
  }
 };
 
 class DRectangle : public Rectangle {
-    public: 
+        public: 
  	DRectangle(){
   		width = 5; length = 10; depth = 3;
  }
@@ -75,9 +75,9 @@ class DRectangle : public Rectangle {
 };
 
 class DCircle : public Circle {
-	 public: 
+	public: 
  	DCircle(double rr, int dd) : Circle(rr){
-    	depth = dd;
+           	depth = dd;
  }
  	void findArea() {
  		 std::cout << "Volume of 3D Circle is " << (M_PI * radius * radius * depth) << std::endl;
